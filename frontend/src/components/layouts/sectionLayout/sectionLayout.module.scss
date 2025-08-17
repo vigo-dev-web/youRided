@@ -1,0 +1,23 @@
+@import '../../../assets/styles/variable';
+
+.sectionLayout {
+   margin-bottom: 4.5rem;
+
+   @media (max-width: 767px) {
+      @include adaptiveValue ('margin-bottom', 3, 2)
+   }
+}
+
+.container {
+   max-width: 1220px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.title {
+   margin-bottom: 4.5rem;
+
+   @media (max-width: 767px) {
+      @include adaptiveValue ('margin-bottom', 3, 2)
+   }
+}

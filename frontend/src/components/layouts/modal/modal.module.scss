@@ -1,0 +1,50 @@
+@import '@/assets/styles/variable';
+
+.overlay {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: $overlay;
+   opacity: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   visibility: visible;
+   overflow: hidden;
+   padding: 30px;
+   z-index: 10000;
+}
+
+.body {
+
+   position: relative;
+   max-width: 450px;
+   padding: 20px;
+   width: 100%;
+   background-color: #fff;
+   border-radius: 10px;
+
+   @media (max-width: 767px) {
+      @include adaptiveValue('padding', 1, 0.5);
+   }
+
+}
+
+.closeBtn {
+   position: absolute;
+   top: 3%;
+   right: 3%;
+   font-weight: 800;
+   font-size: 1.3rem;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+   .overlay {
+      padding: 15px;
+   }
+
+   .closeBtn {
+      font-size: 1rem;
+   }
+}

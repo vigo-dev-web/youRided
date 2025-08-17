@@ -1,0 +1,61 @@
+@import '@/assets/styles/variable';
+
+.wrapper {
+   background-color: #fff;
+   position: sticky;
+   top: 0;
+   width: 100%;
+   box-shadow: $mainShadow;
+   z-index: 100;
+}
+
+.container {
+   max-width: 767px;
+   padding: 0 3%;
+   margin: 0 auto;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 7px 0;
+   align-items: center;
+}
+
+.leftNav,
+.rightNav {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 1.3rem;
+   align-items: center;
+}
+
+.leftNav {
+   column-gap: 0.7rem;
+}
+
+
+.burgerBtn {
+   cursor: pointer;
+}
+
+.search {
+   cursor: pointer
+}
+
+.cart {
+   cursor: pointer;
+}
+
+.accountLink {
+   cursor: pointer;
+}
+
+.phone {
+   cursor: pointer;
+}
+
+.phoneIcon {
+   transform: rotate(90deg);
+
+}

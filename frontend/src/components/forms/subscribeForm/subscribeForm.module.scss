@@ -1,0 +1,14 @@
+.formContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap: 0.8rem 0;
+}
+
+.label {
+   text-wrap: nowrap;
+}
+
+.inputWrapper {
+   margin-top: 17px;
+}

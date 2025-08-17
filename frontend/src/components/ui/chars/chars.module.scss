@@ -1,0 +1,56 @@
+@import '../../../assets/styles/variable';
+
+.charsTitle {
+   margin-bottom: 1.5rem;
+   @include adaptiveValue('margin-bottom', 1.5, 1);
+}
+
+
+.charWrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-column-gap: 0;
+   gap: 1.5rem 0.5rem;
+   line-height: 2;
+   @media (max-width:767px) {
+      @include adaptiveFont(14, 12);
+      gap: 1rem 0.3rem;
+   }
+
+   & span {
+      display: block;
+      color: $secondLink;
+      font-weight: 600;
+      line-height: 1.2;
+   }
+}
+
+.charItem1 {
+   grid-area: 1 / 1 / 2 / 2;
+   text-wrap: nowrap;
+}
+
+.charItem2 {
+   grid-area: 1 / 2 / 2 / 3;
+}
+
+.charItem3 {
+   grid-area: 1 / 3 / 2 / 4;
+}
+
+.charItem4 {
+   grid-area: 2 / 1 / 3 / 2;
+}
+
+.charItem5 {
+   grid-area: 2 / 2 / 3 / 3;
+}
+
+.charItem6 {
+   grid-area: 2 / 3 / 3 / 4;
+}
+
+.charLink {
+   @include current-link(1rem, $mainColor, $fontColor)
+}

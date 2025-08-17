@@ -1,0 +1,22 @@
+@import "../../../assets/styles/variable";
+
+.link {
+   display: flex;
+   justify-content: flex-end;
+   column-gap: 0.2rem;
+   font-size: 0.9rem;
+   color: $secondLink;
+   cursor: pointer;
+   transition: $main-transition;
+   align-items: center;
+
+   @media (any-hover:hover) {
+      &:hover {
+         color: $mainColor;
+      }
+   }
+
+   @media (max-width:767px) {
+      @include adaptiveFont(13, 10);
+   }
+}

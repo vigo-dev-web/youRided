@@ -1,0 +1,41 @@
+@import '../../assets/styles/variable';
+
+
+// .wrapper {
+//    min-width: 200px;
+// }
+
+.count {
+   display: inline-block;
+   text-align: center;
+   font-weight: 600;
+   // padding: 0 0.7rem;
+   min-width: 30px;
+}
+
+.btn {
+   border: none;
+   background-color: $mainColor;
+   vertical-align: baseline;
+   // padding: 0.2rem 0.3rem;
+   border-radius: 3px;
+   font-weight: 600;
+   font-size: 1rem;
+   width: 1.4rem;
+   height: 1.4rem;
+   cursor: pointer;
+}
+
+.btnDisabled {
+   border: none;
+   background-color: $fontColor;
+   color: #fff;
+   vertical-align: baseline;
+   // padding: 0.2rem 0.3rem;
+   border-radius: 3px;
+   font-weight: 600;
+   font-size: 1rem;
+   width: 1.4rem;
+   height: 1.4rem;
+   pointer-events: none;
+}

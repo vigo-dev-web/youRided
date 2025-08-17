@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_electric_prop_electric_chars",
+  "info": {
+    "displayName": "electric_char"
+  },
+  "options": {},
+  "attributes": {
+    "max_speed": {
+      "type": "integer"
+    },
+    "distance": {
+      "type": "integer"
+    },
+    "charge_time": {
+      "type": "integer"
+    },
+    "battery": {
+      "type": "string"
+    },
+    "e_power": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

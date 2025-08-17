@@ -1,0 +1,17 @@
+@import '@/assets/styles/variable';
+
+.wrapper {
+   display: flex;
+   justify-content: flex-start;
+   column-gap: 1rem;
+   align-items: center;
+
+   & a {
+      color: $mainColor;
+      transition: $main-transition;
+
+      &:hover {
+         color: #fff;
+      }
+   }
+}

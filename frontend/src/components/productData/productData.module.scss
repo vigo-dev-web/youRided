@@ -1,0 +1,46 @@
+@import '../../assets/styles/variable';
+
+.productData {
+   background: #fff;
+   border-radius: 0.5rem;
+   padding: 1.5rem 1rem 1rem;
+   box-shadow: $mainShadow;
+
+   @media (max-width:767px) {
+      @include adaptiveValue('padding-right', 1, 0.5);
+      @include adaptiveValue('padding-left', 1, 0.5);
+      @include adaptiveValue('padding-bottom', 1, 0.5);
+   }
+}
+
+.dataTitles {
+   border-bottom: 1px solid $thinBorder;
+   padding-bottom: 1.5rem;
+
+   @media (max-width:767px) {
+      @include adaptiveValue('padding-bottom', 1.5, 1.25);
+   }
+}
+
+.titlesList {
+   display: flex;
+   justify-content: flex-start;
+   column-gap: 5rem;
+}
+
+.dataLink {
+   @include current-link(1rem, $fontColor, $mainColor);
+   cursor: pointer;
+
+}
+
+.dataContent {
+   padding-top: 1.5rem;
+   line-height: 1.5;
+
+   @media (max-width:767px) {
+      @include adaptiveValue('padding-top', 1.5, 1.25);
+      @include adaptiveFont(14, 12);
+      @include adaptiveValue('line-height', 1.4, 1.1);
+   }
+}

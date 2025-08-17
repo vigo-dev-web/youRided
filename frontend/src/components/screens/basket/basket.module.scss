@@ -1,0 +1,112 @@
+@import '../../../assets/styles/variable';
+
+.layout {
+   background: $mainBackground;
+   padding-bottom: 2rem;
+   padding-top: 2rem;
+}
+
+.container {
+   max-width: 1220px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.title {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+}
+
+.subtitle {
+   font-size: 1rem;
+   font-weight: 400;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
+// .body {
+//    background: #fff;
+//    border-radius: 10px;
+//    margin-bottom: 1rem;
+//    box-shadow: $mainShadow;
+//    min-width: 600px;
+
+//    @media (max-width: 767px) {
+//       flex-direction: column;
+//    }
+// }
+
+// .sidebarBody {
+//    display: flex;
+//    justify-content: space-between;
+//    background: #fff;
+//    border-radius: 10px;
+//    margin-bottom: 2rem;
+//    box-shadow: $mainShadow;
+// }
+
+.topbarWrapper {
+   padding: 1rem 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   gap: 2rem;
+}
+
+
+.checkboxText {
+   margin-left: 1rem;
+   cursor: pointer;
+
+}
+
+.removeItems {
+   font-size: 1rem;
+   color: $hoverMenuColor;
+   font-weight: 600;
+   cursor: pointer;
+   transition: $main-transition;
+
+   @media (any-hover:hover) {
+      &:hover {
+         color: $mainColor;
+      }
+   }
+}
+
+.iconContainer {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 0.5rem;
+}
+
+
+.countContainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1rem;
+}
+
+// .sidebarContainer {
+//    padding: 2.5rem 2rem;
+// }
+
+
+// .productGallery {
+//    flex: 1 1 45%;
+//    border-right: 1px solid $thinBorder;
+//    padding: 1.5rem 1rem 1rem;
+
+//    @media (max-width:767px) {
+//       padding-top: 1rem;
+//       @include adaptiveValue('padding-right', 1, 0.5);
+//       @include adaptiveValue('padding-left', 1, 0.5);
+//    }
+
+// }

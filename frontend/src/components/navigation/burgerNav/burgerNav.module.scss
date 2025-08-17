@@ -1,0 +1,81 @@
+@import '@/assets/styles/variable';
+
+.wrapper {
+   position: absolute;
+   background-color: #fff;
+   transform: translateY(-850px);
+   left: 0;
+   right: 0;
+   padding: 15px 3%;
+   z-index: 100;
+   overflow-y: hidden;
+}
+
+.openWrapper {
+   position: absolute;
+   background-color: #fff;
+   transform: translateY(0);
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 15px 3%;
+   z-index: 100;
+   overflow-y: hidden;
+}
+
+.icons {
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.wrap {
+   color: blue;
+}
+
+.closeBtn {
+   position: relative;
+   right: 0;
+   top: 0;
+}
+
+.account {
+   position: relative;
+   right: 0;
+   top: 0;
+}
+
+.body {
+   display: flex;
+   flex-direction: column;
+   gap: 1.8rem 0;
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   text-align: center;
+
+   & li {
+      cursor: pointer;
+   }
+
+   & a {
+      &:hover {
+         color: $fontColor;
+      }
+
+   }
+}
+
+.lastItem {
+   padding-bottom: 15px;
+}
+
+.subMenu {
+   font-size: 1rem;
+   margin-top: 15px;
+
+   & li {
+      margin-bottom: 15px;
+   }
+}

@@ -1,0 +1,41 @@
+@import '@/assets/styles/variable';
+
+.wrapper {
+   padding-left: 0.3rem;
+}
+
+.searchForm {
+   position: relative;
+   background-color: #fff;
+   border: 2px solid $mainColor;
+   border-radius: 20px;
+}
+
+.input {
+   height: 35px;
+   background-color: transparent;
+   border: none;
+   padding: 0 90px 0 20px;
+   width: 525px;
+   font-size: 1.1rem;
+   &::placeholder {
+      color: rgba(0, 0, 0, 0.259);
+   }
+   &:focus {
+      outline: none;
+   }
+}
+
+.button {
+   position: absolute;
+   background-color: $mainColor;
+   top: 0;
+   right: -3px;
+   border: 2px solid $mainColor;
+   height: 100%;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   width: 70px;
+   padding: 2px 0;
+   cursor: pointer;
+}

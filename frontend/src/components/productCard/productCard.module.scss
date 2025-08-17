@@ -1,0 +1,120 @@
+@import '../../assets/styles/variable';
+
+.card {
+   width: 100%;
+   padding: 1rem;
+   border-radius: 5px;
+   transition: all, 0.5s, ease-out, 0.8s;
+   box-shadow: 0 3px 10px -2px rgb(0 0 0 / 0.2);
+   max-width: 275px;
+
+   @media (any-hover:hover) {
+      &:hover {
+         box-shadow: 0 3px 10px 3px rgb(0 0 0 / 0.2);
+      }
+   }
+
+   @media (max-width: 767px) {
+      padding: 0.6rem;
+   }
+
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: relative;
+   text-align: center;
+}
+
+.imageLink {
+   display: inline-block;
+   line-height: 0;
+   margin-bottom: 0.5rem;
+   align-items: center;
+}
+
+.productNote {
+   display: inline-block;
+   position: absolute;
+   background-color: red;
+   color: #fff;
+   font-size: 0.7rem;
+   font-weight: 600;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+   overflow: hidden;
+   white-space: nowrap;
+   padding: 3px 5px;
+   border-radius: 5px;
+   top: 10%;
+   left: 0;
+   transform: rotate(-20deg);
+}
+
+.linkContainer {
+   margin-bottom: 1rem;
+   display: flex;
+   justify-content: flex-start;
+   text-align: start;
+}
+
+.discountPrice {
+   font-size: 1.25rem;
+   font-weight: 600;
+   text-wrap: nowrap;
+}
+
+.price {
+   font-weight: 600;
+   text-decoration: line-through;
+   font-size: 1.1rem;
+   color: #00000042;
+   text-wrap: nowrap;
+}
+
+.priceContainer {
+   margin-bottom: 1rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: baseline;
+
+   & span:not(:last-child) {
+      margin-right: 1rem;
+   }
+}
+
+.linkCart {
+   @media (any-hover:hover) {
+      &:hover {
+         color: #fff;
+      }
+   }
+}
+
+.ratingContainer {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+   align-items: center;
+}
+
+.addWishIcon {
+   color: $mainColor;
+   vertical-align: middle;
+   transition: $main-transition;
+}
+
+.wishIcon {
+   color: $secondLink;
+   vertical-align: middle;
+   transition: $main-transition;
+}
+
+.buttonsWrapper {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 0.2rem;
+
+}

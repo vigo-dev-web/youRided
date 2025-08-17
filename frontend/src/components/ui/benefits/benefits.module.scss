@@ -1,0 +1,88 @@
+@import '../../../assets/styles/variable';
+
+.section {
+   padding: 3rem 0;
+   font-size: 0.9rem;
+
+   @media (max-width: 767px) {
+      @include adaptiveValue('padding-top', 2, 1);
+      @include adaptiveValue('padding-bottom', 2, 1);
+   }
+}
+
+.container {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(5, minmax(90px, 1fr));
+   border: 0.8px solid rgb(221, 221, 221);
+   border-radius: 10px;
+   background-color: rgb(252, 252, 252);
+   box-shadow: $mainShadow;
+   margin: 0 auto;
+
+   @media (max-width: 767px) {
+
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 45%;
+      min-width: 260px;
+
+      & p {
+         font-size: 0.78rem;
+         letter-spacing: -0.07em;
+      }
+   }
+}
+
+.item {
+   display: flex;
+   justify-content: space-evenly;
+   column-gap: 5px;
+   width: 100%;
+   padding: 15px 5px;
+   align-items: center;
+
+   & span {
+      text-wrap: nowrap;
+   }
+
+   @media (max-width: 767px) {
+      justify-content: space-between;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      & p {
+         font-size: 0.78rem;
+         letter-spacing: -0.07em;
+      }
+   }
+}
+
+.itemText {
+   text-align: left;
+   width: 120px;
+}
+
+
+.item:not( :last-child) {
+   border-right: 0.8px solid rgb(221, 221, 221);
+
+   @media (max-width: 767px) {
+      border-bottom: 0.8px solid rgb(221, 221, 221);
+      border-right: none;
+   }
+}
+
+.icon {
+   color: $mainColor;
+   transition: $main-transition;
+
+   @media (any-hover:hover) {
+      &:hover {
+         transform: rotate(-40deg);
+      }
+   }
+}

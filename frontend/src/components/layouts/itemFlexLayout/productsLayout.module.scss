@@ -1,0 +1,12 @@
+.wrapper {
+   display: grid;
+   justify-items: center;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 1.8rem;
+
+   @media (max-width: 767px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+      gap: 1.3rem;
+      padding: 0 40px;
+   }
+}

@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_main_prop_products",
+  "info": {
+    "displayName": "product",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "discount_price": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "colors": {
+      "type": "json"
+    },
+    "is_epower": {
+      "type": "boolean",
+      "required": true
+    },
+    "is_child": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "popular",
+        "sale"
+      ]
+    },
+    "in_stock": {
+      "type": "boolean",
+      "default": true
+    },
+    "char": {
+      "type": "component",
+      "component": "main-prop.char",
+      "repeatable": false
+    },
+    "electric_char": {
+      "type": "component",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "is_epower"
+            },
+            true
+          ]
+        }
+      },
+      "component": "electric-prop.electric-char",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,33 @@
+@import '@/assets/styles/variable';
+
+.wrapper {
+   border-radius: 5px;
+   background-color: $mainColor;
+   padding: 0.6rem 0.6rem 0.7rem;
+}
+
+.img {
+   height: 100%;
+   object-fit: contain;
+   line-height: 0;
+}
+
+.link {
+   @media (any-hover: hover) {
+      &:hover {
+         color: $hoverMenuColor;
+      }
+
+   }
+
+}
+
+.content {
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%);
+   white-space: nowrap;
+   z-index: 5;
+   margin-top: 0.5rem;
+}

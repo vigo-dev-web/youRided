@@ -1,0 +1,124 @@
+@import '@/assets/styles/variable';
+
+.layout {
+   background-color: $mainColor;
+   color: $fontColor;
+   display: inline-block;
+   border: 2px solid transparent;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.4s ease-in 0s;
+   overflow: hidden;
+   font-weight: 600;
+   text-decoration: none;
+   text-align: center;
+   white-space: nowrap;
+   width: 100%;
+   text-transform: uppercase;
+   padding: 0.5rem 0.5rem;
+   font-size: 0.8rem;
+
+   &:disabled {
+      background: #8a949c;
+      color: #ccc;
+      cursor: unset;
+   }
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $fontColor;
+         color: #fff;
+      }
+   }
+
+   @media (max-width: 767px) {
+      @include adaptiveFont (12, 9);
+
+      &:focus {
+         background-color: $mainColor;
+      }
+   }
+}
+
+
+.reverseHoverLayout {
+   background-color: $mainColor;
+   color: $fontColor;
+   display: inline-block;
+   border: 2px solid transparent;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.4s ease-in 0s;
+   overflow: hidden;
+   font-weight: 600;
+   text-decoration: none;
+   text-align: center;
+   white-space: nowrap;
+   width: 100%;
+   text-transform: uppercase;
+   padding: 0.5rem 0.5rem;
+   font-size: 0.8rem;
+
+   &:disabled {
+      background: #8a949c;
+      color: #ccc;
+      cursor: unset;
+   }
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $mainColor;
+         color: $fontColor;
+         transform: translateY(2px);
+      }
+   }
+
+   @media (max-width: 767px) {
+      @include adaptiveFont (12, 9);
+
+      &:focus {
+         background-color: $mainColor;
+      }
+   }
+}
+
+.reverseLayout {
+   background-color: $fontColor;
+   color: #fff;
+   display: inline-block;
+   border: 2px solid transparent;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.4s ease-in 0s;
+   overflow: hidden;
+   font-weight: 600;
+   text-decoration: none;
+   text-align: center;
+   white-space: nowrap;
+   width: 100%;
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   padding: 0.5rem 0.5rem;
+
+   &:disabled {
+      background: #8a949c;
+      color: #ccc;
+      cursor: unset;
+   }
+
+   @media (any-hover:hover) {
+      @include adaptiveFont (12, 9);
+
+      &:hover {
+         background-color: $mainColor;
+         color: $fontColor;
+      }
+   }
+
+   @media (max-width: 767px) {
+      &:focus {
+         background-color: $mainColor;
+
+      }
+   }
+}

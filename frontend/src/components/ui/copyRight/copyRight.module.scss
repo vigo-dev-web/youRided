@@ -1,0 +1,33 @@
+@import '../../../assets/styles/variable';
+.container {
+   max-width: 1050px;
+   padding: 3px 15px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   gap: 1rem;
+   align-items: center;
+   line-height: 1;
+}
+.iconsWrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.icons {
+   margin-left: 1rem;
+}
+
+.developInfo {
+   font-weight: 600;
+   color: $mainColor;
+   @media (any-hover:hover){
+      &:hover {
+         color: #fff;
+      }
+   }
+}

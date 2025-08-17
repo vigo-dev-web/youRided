@@ -1,0 +1,45 @@
+@import '../../../assets/styles/variable';
+
+.mainImage {
+   max-width: 19rem;
+   height: 20rem;
+   margin: 0 auto;
+   margin-bottom: 1rem;
+   position: relative;
+
+   @media (max-width:767px) {
+      max-width: 12rem;
+      height: 15rem;
+   }
+
+}
+
+.imagesContainer {
+   border-top: 1px solid $thinBorder;
+   display: flex;
+   justify-content: space-evenly;
+   gap: 0.5rem;
+   flex-wrap: wrap;
+   padding-top: 0.5rem;
+}
+
+.imageWrapper {
+   width: 6rem;
+   height: 5rem;
+   position: relative;
+   cursor: pointer;
+}
+
+.productNote {
+   display: inline-block;
+   position: relative;
+   background-color: red;
+   color: #fff;
+   top: 10%;
+   left: -6%;
+   border-radius: 5px;
+   padding: 0.3rem 1rem;
+   font-weight: 600;
+   transform: rotate(-15deg);
+
+}

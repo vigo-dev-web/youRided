@@ -1,0 +1,78 @@
+@import '@/assets/styles/variable';
+
+.footer {
+   background-color: $fontColor;
+   color: #fff;
+}
+
+.container {
+   margin: 0 auto;
+   padding: 15px 3% 10px;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.locationContainer {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.messengersContainer {
+   display: inline-flex;
+   gap: 0 0.8rem;
+   align-items: baseline;
+   margin-bottom: 15px;
+}
+
+.locationTitle {
+   @include adaptiveFont (18, 15);
+   margin-bottom: 10px;
+}
+
+.messengersTitle {
+   @include adaptiveFont (18, 15);
+   margin-bottom: 18px;
+}
+
+.formContainer {
+   position: relative;
+}
+
+.subscribeButton {
+   display: inline-block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   height: 88%;
+   border: none;
+   color: $fontColor;
+   padding: 0.3rem 0.5rem 0;
+   background-color: $mainColor;
+   cursor: pointer;
+}
+
+.formContainer {
+   max-width: 250px;
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+.developInfo {
+   @include adaptiveFont (14, 12);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.developLink {
+   font-weight: 600;
+   @include adaptiveFont (15, 13);
+   color: $mainColor;
+}

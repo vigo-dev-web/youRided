@@ -1,0 +1,9 @@
+@import "@/assets/styles/variable";
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 1.7rem;
+   padding-left: 0.5rem;
+}

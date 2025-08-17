@@ -1,0 +1,44 @@
+@import '../../assets/styles/variable';
+
+.body {
+   background: #fff;
+   border-radius: 10px;
+   margin-bottom: 1rem;
+   box-shadow: $mainShadow;
+   min-width: 590px;
+
+   @media (max-width: 767px) {
+      flex-direction: column;
+   }
+}
+
+.itemWrapper {
+   padding: 1.8rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.manufacturer {
+   font-size: 1rem;
+}
+
+.linkContainer {
+   font-size: 1.2rem;
+}
+
+.priceContainer {
+   flex: 1 1 auto;
+}
+
+.discountPrice {
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+.price {
+   font-size: 1rem;
+   color: rgba(0, 0, 0, 0.2588235294);
+   text-decoration: line-through;
+}

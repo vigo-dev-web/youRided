@@ -1,0 +1,57 @@
+@import '@/assets/styles/variable';
+
+.labelChecked {
+   display: inline-flex;
+   align-items: center;
+
+   &:before {
+      content: '✔';
+      flex: 0 0 17px;
+      height: 17px;
+      font-weight: 600;
+      background-color: $mainColor;
+      text-align: center;
+      color: $fontColor;
+      border: 2px solid $mainColor;
+      border-radius: 3px;
+   }
+}
+
+.labelEmpty {
+   display: inline-flex;
+   align-items: center;
+
+   &:before {
+      content: '✔';
+      flex: 0 0 17px;
+      height: 17px;
+      font-weight: 600;
+      background-color: #fff;
+      text-align: center;
+      color: #fff;
+      border: 2px solid $mainColor;
+      border-radius: 3px;
+   }
+}
+
+.checkbox {
+   display: none;
+}
+
+@media screen and (max-width: 767px) {
+   .labelChecked {
+      &:before {
+         flex: 0 0 14px;
+         height: 14px;
+         font-weight: 600;
+      }
+   }
+
+   .labelEmpty {
+      &:before {
+         flex: 0 0 14px;
+         height: 14px;
+         font-weight: 600;
+      }
+   }
+}

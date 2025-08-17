@@ -1,0 +1,53 @@
+$mainColor: #fed700;
+$fontColor: #333E48;
+$secondLink: rgba(0, 0, 0, 0.259);
+$hoverMenuColor: #df3737;
+$mainBackground: #F7F7FB;
+$thinBorder: #EDEDF9;
+$overlay: #272626c0;
+$mainShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px;
+$main-transition: all 0.4s ease-in 0s;
+
+@mixin current-link ($fs, $mainColor, $hoverColor) {
+   font-size: $fs;
+   font-weight: 600;
+   color: $mainColor;
+
+   @media (any-hover:hover) {
+      &:hover {
+         color: $hoverColor;
+         transition: $main-transition;
+      }
+   }
+
+}
+
+$mockupWidth: 767;
+
+@mixin adaptiveFont ($pcFontSize, $mobFontSize) {
+   $addSize: $pcFontSize - $mobFontSize;
+   $addMobSize: $addSize + $addSize * 0.7;
+
+   @media(max-width: 767px) {
+      font-size: calc(#{$mobFontSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$mockupWidth}));
+   }
+
+   @media(min-width: 767px) {
+      font-size: calc(#{$mobFontSize + px} + #{$addSize} * (100vw / #{$mockupWidth}));
+   }
+}
+
+@mixin adaptiveValue ($propName, $pcFontSize, $mobFontSize) {
+   $pcFontSize: $pcFontSize * 16;
+   $mobFontSize: $mobFontSize * 16;
+   $addSize: $pcFontSize - $mobFontSize;
+   $addMobSize: $addSize + $addSize * 0.7;
+
+   @media(max-width: 767px) {
+      #{$propName}: calc(#{$mobFontSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$mockupWidth}));
+   }
+
+   @media(min-width: 767px) {
+      #{propName}: calc(#{$mobFontSize + px} + #{$addSize} * (100vw / #{$mockupWidth}));
+   }
+}

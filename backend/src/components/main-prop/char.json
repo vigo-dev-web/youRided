@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_main_prop_chars",
+  "info": {
+    "displayName": "char"
+  },
+  "options": {},
+  "attributes": {
+    "weight": {
+      "type": "decimal"
+    },
+    "length": {
+      "type": "decimal"
+    },
+    "max_payload": {
+      "type": "integer"
+    },
+    "min_age": {
+      "type": "integer"
+    },
+    "deck_width": {
+      "type": "decimal"
+    },
+    "handlebar_width": {
+      "type": "decimal"
+    },
+    "d_wheel": {
+      "type": "integer"
+    },
+    "deck_height": {
+      "type": "integer"
+    },
+    "is_folding": {
+      "type": "boolean",
+      "default": false
+    },
+    "warranty": {
+      "type": "integer"
+    },
+    "ground_clearance": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

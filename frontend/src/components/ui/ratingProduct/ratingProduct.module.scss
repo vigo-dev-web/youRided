@@ -1,0 +1,8 @@
+@import '../../../assets/styles/variable';
+
+.starsContainer {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 4px;
+   color: $mainColor;
+}

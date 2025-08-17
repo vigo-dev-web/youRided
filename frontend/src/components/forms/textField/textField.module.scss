@@ -1,0 +1,133 @@
+@import '@/assets/styles/variable';
+
+.container {
+   margin: 0 0 13px 0;
+   position: relative;
+}
+
+.phonePrefix {
+   position: absolute;
+   top: 17%;
+   left: 2%;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.field {
+   height: 35px;
+   padding: 0 10px 0 26px;
+   margin-bottom: 4px;
+   border-radius: 6px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   width: 100%;
+   border-width: 2px;
+   border-style: solid;
+   border-color: $mainColor;
+
+   &::placeholder {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgb(181, 181, 181);
+      transform: translateX(2%);
+   }
+
+   &:focus {
+      outline: none;
+      border-color: $mainColor;
+      box-shadow: inset 1px 1px 3px #a09348;
+      -moz-box-shadow: inset 1px 1px 3px #a09348;
+      -webkit-box-shadow: inset 1px 1px 3px #a09348;
+   }
+}
+
+.fieldError {
+   height: 35px;
+   padding: 0 10px 0 26px;
+   margin-bottom: 4px;
+   border-radius: 6px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   width: 100%;
+   border-width: 2px;
+   border-style: solid;
+   border-color: $hoverMenuColor;
+
+   &::placeholder {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgb(181, 181, 181);
+      transform: translateX(2%);
+   }
+
+   &:focus {
+      outline: none;
+      border-color: $hoverMenuColor;
+      box-shadow: inset 1px 1px 3px #bc594a;
+      -moz-box-shadow: inset 1px 1px 3px #bc594a;
+      -webkit-box-shadow: inset 1px 1px 3px #bc594a;
+   }
+}
+
+.field:-webkit-autofill {
+   -webkit-text-fill-color: inherit;
+   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+   transition: background-color 5000s ease-in-out 0s;
+
+}
+
+.warning {
+   color: $hoverMenuColor;
+   font-size: 0.8rem;
+}
+
+.hidden {
+   visibility: hidden;
+   opacity: 0;
+   line-height: 1;
+}
+
+@media screen and (max-width: 767px) {
+   .container {
+      margin: 0 0 7px 0;
+   }
+
+   .phonePrefix {
+      position: absolute;
+      top: 17%;
+      left: 2%;
+      font-size: 14px;
+      font-weight: 400;
+   }
+
+   .field {
+      height: 30px;
+      padding: 0 10px 0 22px;
+      font-size: 14px;
+
+      &::placeholder {
+         font-size: 0.8rem;
+      }
+   }
+
+   .fieldError {
+      height: 30px;
+      padding: 0 10px 0 22px;
+      font-size: 14px;
+
+      &::placeholder {
+         font-size: 0.8rem;
+      }
+
+   }
+
+   .warning {
+      font-size: 0.65rem;
+      line-height: 1;
+   }
+   .hidden {
+      line-height: 1;
+   }
+
+
+}

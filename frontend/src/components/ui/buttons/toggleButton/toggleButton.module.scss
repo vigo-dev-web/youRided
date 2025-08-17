@@ -1,0 +1,37 @@
+@import '@/assets/styles/variable';
+
+.layout {
+   background-color: $mainColor;
+   color: $fontColor;
+   display: block;
+   border: 2px solid transparent;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.4s ease-in 0s;
+   overflow: hidden;
+   padding: 0.5rem 0.5rem;
+   font-weight: 600;
+   text-decoration: none;
+   text-align: center;
+   white-space: nowrap;
+   width: 100%;
+   text-transform: uppercase;
+   font-size: 0.8rem;
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $fontColor;
+         color: #fff;
+      }
+   }
+
+   @media (max-width: 767px) {
+      @include adaptiveValue ('padding', 0.4, 0.2);
+      @include adaptiveFont (12, 9);
+
+      &:focus {
+         background-color: $fontColor;
+         color: #fff;
+      }
+   }
+}

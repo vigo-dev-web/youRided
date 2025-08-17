@@ -1,0 +1,59 @@
+@import "@/assets/styles/variable";
+
+.button {
+   display: inline-block;
+   box-sizing: border-box;
+   border: 2px solid transparent;
+   background-color: $mainColor;
+   color: $fontColor;
+   border-radius: 10px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: $main-transition;
+   overflow: hidden;
+   white-space: nowrap;
+   padding: 0.5rem 2.5rem;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   font-weight: 600;
+   text-align: center;
+   box-shadow: 0 10px 6px -10px #00000092;
+   -webkit-box-shadow: 0 10px 6px -10px #00000092;
+   -moz-box-shadow: 0 10px 6px -10px #00000092;
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $fontColor;
+         color: #fff;
+      }
+   }
+}
+
+.buttonReverse {
+   display: inline-block;
+   box-sizing: border-box;
+   border: 2px solid transparent;
+   background-color: $fontColor;
+   color: #fff;
+   border-radius: 10px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: $main-transition;
+   overflow: hidden;
+   white-space: nowrap;
+   padding: 0.5rem 2.5rem;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   font-weight: 600;
+   text-align: center;
+   box-shadow: 0 10px 6px -10px #00000092;
+   -webkit-box-shadow: 0 10px 6px -10px #00000092;
+   -moz-box-shadow: 0 10px 6px -10px #00000092;
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $mainColor;
+         color: $fontColor;
+      }
+   }
+}

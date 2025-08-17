@@ -1,0 +1,59 @@
+@import '../../assets/styles/variable';
+
+.wrapper {
+   border-bottom: 0.8px solid rgb(239, 239, 239);
+   padding: 8px 0;
+}
+
+.container {
+   max-width: 1220px;
+   padding: 0 15px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.body {
+   display: flex;
+   justify-content: space-between;
+   line-height: 2.3;
+   font-size: 0.78rem;
+   font-weight: 600;
+}
+
+.contacts {
+   display: flex;
+   gap: 0 1.7rem;
+}
+
+.contactsItem {
+   display: flex;
+   &:first-child {
+      font-size: 0.75rem;
+   }
+}
+
+.accountItem {
+   display: flex;
+   gap: 0 7px
+}
+
+.note {
+   margin-left: 7px;
+}
+
+.phoneIcon {
+   transform: rotate(90deg);
+}
+
+.accountBtn {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   font-size: inherit;
+   font-weight: inherit;
+   color: inherit;
+   transition: $main-transition;
+   &:hover {
+      color: $mainColor;
+   }
+}

@@ -1,0 +1,129 @@
+@import "@/assets/styles/variable";
+
+.button {
+   display: inline-block;
+   align-items: center;
+   border: 2px solid transparent;
+   background-color: $mainColor;
+   color: $fontColor;
+   border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: $main-transition;
+   overflow: hidden;
+   white-space: nowrap;
+   padding: 0.3em 0.3em;
+   font-size: 0.75rem;
+   font-weight: 600;
+   text-align: center;
+   line-height: 1.5;
+   letter-spacing: 0.01em;
+
+   @media(max-width: 767px) {
+      @include adaptiveFont (12, 10);
+   }
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $fontColor;
+         color: #fff;
+      }
+   }
+}
+
+.buttonReverse {
+   display: inline-block;
+   align-items: center;
+   box-sizing: border-box;
+   border: 2px solid transparent;
+   background-color: $fontColor;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: $main-transition;
+   overflow: hidden;
+   white-space: nowrap;
+   padding: 0.3em 0.3em;
+   font-size: 0.75rem;
+   font-weight: 600;
+   text-transform: none;
+   text-align: center;
+   line-height: 1.5;
+   letter-spacing: 0.01em;
+
+   @media(max-width: 767px) {
+      @include adaptiveFont (12, 10);
+   }
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $mainColor;
+         color: $fontColor;
+      }
+   }
+}
+
+.bigButton {
+   display: inline-block;
+   align-items: center;
+   border: 2px solid transparent;
+   background-color: $mainColor;
+   color: $fontColor;
+   border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: $main-transition;
+   overflow: hidden;
+   white-space: nowrap;
+   padding: 0.4em 0.5em;
+   font-size: 1.1rem;
+   font-weight: 600;
+   text-align: center;
+   line-height: 1.5;
+   letter-spacing: 0.01em;
+
+   @media(max-width: 767px) {
+      @include adaptiveFont (16, 10);
+   }
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $fontColor;
+         color: #fff;
+      }
+   }
+}
+
+.bigButtonReverse {
+   display: inline-block;
+   align-items: center;
+   box-sizing: border-box;
+   border: 2px solid transparent;
+   background-color: $fontColor;
+   color: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   text-decoration: none;
+   transition: $main-transition;
+   overflow: hidden;
+   white-space: nowrap;
+   padding: 0.4em 0.5em;
+   font-size: 1.1rem;
+   font-weight: 600;
+   text-transform: none;
+   text-align: center;
+   line-height: 1.5;
+   letter-spacing: 0.01em;
+
+   @media(max-width: 767px) {
+      @include adaptiveFont (16, 10);
+   }
+
+   @media (any-hover:hover) {
+      &:hover {
+         background-color: $mainColor;
+         color: $fontColor;
+      }
+   }
+}

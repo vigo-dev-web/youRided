@@ -1,0 +1,32 @@
+@import '../../assets/styles/variable';
+
+.sidebarBody {
+   display: flex;
+   justify-content: space-between;
+   background: #fff;
+   border-radius: 10px;
+   margin-bottom: 1rem;
+   box-shadow: $mainShadow;
+   max-height: 23rem;
+   position: sticky;
+   top: 42%;
+   right: 10%;
+}
+
+.sidebarContainer {
+   padding: 2.5rem 2rem;
+}
+
+.prices {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 2rem;
+   align-items: baseline;
+   font-size: 1.1rem;
+
+
+   &:last-of-type {
+      font-size: 1.3rem;
+      font-weight: 600;
+   }
+}
